@@ -1,13 +1,14 @@
 import openai
 import config
 import streamlit as st
+import os
 
 # Assigning the API key
 # openai.api_key = config.api_key
 
 # Defining the function to get the output from the model
 def response(input_text):
-    openai.api_key = config.loginCredentials['profiles'][st.session_state['username']]['api_key']
+    openai.api_key = os.environ.get('openai_api_key')
     reply = openai.Completion.create(
         engine="code-davinci-002",
         prompt="''''\n" + input_text + "\n''''",
