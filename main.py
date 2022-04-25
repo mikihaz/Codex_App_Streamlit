@@ -1,8 +1,5 @@
 # Importing Libraries
 import streamlit as st
-import subprocess
-import config
-import codex
 import widget
 
 # Making the Streamlit App

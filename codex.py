@@ -1,6 +1,4 @@
 import openai
-import config
-import streamlit as st
 import os
 
 # Assigning the API key

@@ -1,4 +1,3 @@
-api_key = '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'
 loginCredentials = {
     'profiles': {
         'mikih@z': {
