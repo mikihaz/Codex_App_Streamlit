@@ -8,13 +8,6 @@ def logInForm():
   username = st.text_input('Username')
   password = st.text_input('Password', type='password')
   st.button('Login', on_click=lambda: login(username, password))
-  # with st.form("login_form",clear_on_submit = True):
-  #   st.subheader("LogIn")
-  #   username = st.text_input("Username")
-  #   password = st.text_input("Password", type="password")
-  #   submitted = st.form_submit_button("Login")
-  #   if submitted:
-  #     login(username, password)
 
 def login(username, password):
   if username in config.loginCredentials['profiles'].keys():
@@ -54,7 +47,7 @@ def header():
 
 def body():
   if st.session_state.loginState:
-    input_text = st.text_input('Write your idea here', type= 'multiline', help=
+    input_text = st.text_area('Write your idea here', help=
     """
     1. Create a list of first names
     2. Create a list of last names
