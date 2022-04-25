@@ -3,10 +3,15 @@ loginCredentials = {
     'profiles': {
         'mikih@z': {
             'username': 'mikih@z',
-            'password': 'codex1804',
+            'password': 'codex2204',
             'name': 'Soumik Hazra',
             'role': 'admin',
-            'api_key' : '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'
+        },
+        'rkcoral': {
+            'username': 'rkcoral',
+            'password': 'codex2204',
+            'name': 'Rajesh Kankaria',
+            'role': 'admin',
         },
     },
 }
