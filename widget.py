@@ -54,7 +54,13 @@ def header():
 
 def body():
   if st.session_state.loginState:
-    input_text = st.text_input('Write your idea here')
+    input_text = st.text_input('Write your idea here', help=
+    """
+    1. Create a list of first names
+    2. Create a list of last names
+    3. Combine them randomly into a list of 100 full names
+    """
+   )
     if st.button('Send'):
       with st.spinner('Force-Py Codex is coding your idea...'):
         reply_text = codex.response(input_text)
