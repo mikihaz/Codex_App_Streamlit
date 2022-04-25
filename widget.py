@@ -47,7 +47,7 @@ def header():
 
 def body():
   if st.session_state.loginState:
-    input_text = st.text_area('Write your idea here', help=
+    input_text = st.text_area(label='Write your idea here', help=
     """
     1. Create a list of first names
     2. Create a list of last names
